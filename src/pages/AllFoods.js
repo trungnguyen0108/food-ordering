@@ -18,7 +18,7 @@ const AllFoods = () => {
             return item
     })
 
-    const productPerPage = 4
+    const productPerPage = 8
     const visitedPage = pageNumber * productPerPage
     const displayPage = searchedProduct.slice(visitedPage, visitedPage + productPerPage)
 

@@ -1,0 +1,11 @@
+.single__product-content {
+    padding-left: 50px;
+}
+
+.product__price span {
+    font-size: 1.5rem;
+}
+
+.img__item {
+    cursor: pointer;
+}

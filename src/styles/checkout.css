@@ -1,0 +1,27 @@
+.form__group {
+    margin-bottom: 30px;
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%;
+    background: transparent;
+    padding: 7px 20px;
+    border: none;
+    border-bottom: 1px solid #2122454c;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+    outline: none;
+}
+
+.checkout__bill {
+    background: #fde4e4;
+    padding: 30px;
+}
+
+.checkout__total {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+}
