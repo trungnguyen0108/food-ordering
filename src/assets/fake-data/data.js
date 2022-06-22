@@ -15,8 +15,6 @@ import product_04_image_01 from "../images/product_04.1.jpg";
 import product_04_image_02 from "../images/product_04.2.jpg";
 import product_04_image_03 from "../images/product_04.3.jpg";
 
-
-
 const products = [
     {
         id: "01",

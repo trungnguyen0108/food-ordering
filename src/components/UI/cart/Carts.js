@@ -11,6 +11,11 @@ import "../../../styles/shopping-cart.css"
 const Carts = () => {
     const dispatch = useDispatch()
     const cartProducts = useSelector(state => state.cart.cartItems)
+    const totalAmount = useSelector(state => state.cart.totalAmount)
+
+    const removeItem = (id) => {
+        cartProducts.filter(item => item.id !== id)
+    }
 
     const toggleCart = () => {
         dispatch(cartUiActions.toggle())
@@ -28,14 +33,13 @@ const Carts = () => {
                         <h6 className="text-center mt-5">No item added to the cart</h6>
                     ) : (
                         cartProducts.map((item, index) => (
-                            <CartItem item={item} key={index} />
+                            <CartItem item={item} removeItem={removeItem} key={index} />
                         ))
                     )}
                 </div>
-
                 <div className='cart__bottom d-flex 
                 align-items-center justify-content-between'>
-                    <h6>Subtotal amount: <span>$123</span></h6>
+                    <h6>Total: <span>{totalAmount} VNĐ</span></h6>
                     <button><Link to="checkout">Checkout</Link></button>
                 </div>
             </ListGroup>
