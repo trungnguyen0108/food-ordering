@@ -44,13 +44,13 @@ const FoodDetails = () => {
                         <Col lg="2" md="2">
                             <div className='product__images'>
                                 <div className='img__item' onClick={() => setPreviewImg(product.image01)}>
-                                    <img src={product.image01} className="w-100"></img>
+                                    <img src={product.image01} className="w-50" height="80px"></img>
                                 </div>
                                 <div className='img__item' onClick={() => setPreviewImg(product.image02)}>
-                                    <img src={product.image02} className="w-100"></img>
+                                    <img src={product.image02} className="w-50 mt-3 mb-3" height="80px"></img>
                                 </div>
                                 <div className='img__item' onClick={() => setPreviewImg(product.image03)}>
-                                    <img src={product.image03} className="w-100"></img>
+                                    <img src={product.image03} className="w-50" height="80px"></img>
                                 </div>
                             </div>
                         </Col>
