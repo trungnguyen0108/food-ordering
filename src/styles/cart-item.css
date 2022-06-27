@@ -39,3 +39,9 @@
     padding-bottom: 10px;
     border-bottom: 1px solid #fde4e4;
 }
+
+@media only screen and (max-width: 576px) {
+    .delete__btn {
+        font-size: 1rem;
+    }
+}
