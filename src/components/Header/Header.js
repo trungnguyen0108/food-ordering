@@ -36,8 +36,6 @@ const Header = () => {
         dispatch(cartUiActions.toggle())
     }
 
-
-
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (
@@ -50,6 +48,7 @@ const Header = () => {
             }
         })
     })
+
     return (
         <header className='header' ref={headerRef}>
             <Container>

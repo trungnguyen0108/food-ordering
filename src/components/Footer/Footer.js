@@ -2,7 +2,6 @@ import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import logo from "../../assets/images/logo.png"
 import "../../styles/footer.css"
-import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <footer className="footer">
@@ -69,13 +68,13 @@ const Footer = () => {
                         <div className='social__links d-flex align-items-center gap-4 justify-content-end'>
                             <p className='m-0'>Follow: </p>
                             <span>
-                                <Link to=''><i class="ri-facebook-fill"></i></Link>
+                                <a href='https://www.facebook.com/trungnguyen182001/'><i class="ri-facebook-fill"></i></a>
                             </span>
                             <span>
-                                <Link to=''><i class="ri-github-fill"></i></Link>
+                                <a href='https://github.dev/trungnguyen0108/'><i class="ri-github-fill"></i></a>
                             </span>
                             <span>
-                                <Link to=''><i class="ri-linkedin-box-fill"></i></Link>
+                                <a href='https://www.linkedin.com/in/nguy%E1%BB%85n-trung-6a5238243/'><i class="ri-linkedin-box-fill"></i></a>
                             </span>
                         </div>
                     </Col>
